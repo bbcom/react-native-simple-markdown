@@ -10,17 +10,12 @@
   "author": "Charles Mangwa <charlesmangwa@gmail.com>",
   "scripts": {
     "lint": "eslint .",
-    "flow": "flow --show-all-errors",
-    "prepack": "npm run prepack:clean && npm run prepack:babel && npm run prepack:flow",
-    "prepack:clean": "rimraf lib",
-    "prepack:babel": "babel -d lib src",
-    "prepack:flow": "flow-copy-source -v src lib"
+    "flow": "flow --show-all-errors"
   },
   "dependencies": {
     "lodash": "^4.15.0",
     "prop-types": "^15.6.0",
-    "simple-markdown": "bbcom/simple-markdown#rise",
-    "rimraf": "^2.6.2"
+    "simple-markdown": "bbcom/simple-markdown#rise"
   },
   "peerDependencies": {
     "react": "*",
@@ -68,6 +63,7 @@
     "flow-bin": "^0.61.0",
     "flow-copy-source": "^1.2.1",
     "husky": "^0.14.3",
-    "pretty-quick": "^1.2.2"
+    "pretty-quick": "^1.2.2",
+    "rimraf": "^2.6.2"
   }
 }
